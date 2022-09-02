@@ -8,7 +8,7 @@
 <p>Projeto desenvolvido por: <strong>Thiago Silva Lopes</strong>, em 09/2022.<br/>
 Para o code challenge da vaga Customer Success Engineer, da Croct.</p>
 
-### Demo:
+### Demo: https://croct-cse-challenge.vercel.app
 
 <p> Instalar o projeto localmente: </p>
 
