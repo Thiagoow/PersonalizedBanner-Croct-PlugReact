@@ -13,7 +13,7 @@ export default function Home() {
       <img
         src={reactLogo}
         className={'w-52 pointer-events-none animate-spin'}
-        alt="logo"
+        alt="React logo spinning"
       />
       <b>Hello React + Tailwind!</b>
       <Button />
