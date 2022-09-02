@@ -10,7 +10,7 @@ const Button = () => {
   return (
     <button
       className={
-        'p-1 rounded-md bg-firstColor text-btnTxtColor font-semibold mt-6 mb-6 hover:bg-altFirstColor'
+        'p-2 rounded-md bg-firstColor text-btnTxtColor font-semibold mt-6 mb-6 hover:bg-altFirstColor'
       }
       onClick={handleClick}
     >
