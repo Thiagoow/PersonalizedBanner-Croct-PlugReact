@@ -1,13 +1,15 @@
 import React from 'react'
 import { CroctProvider } from '@croct/plug-react'
-import Home from './pages/Home'
+import { AppRoutes } from './Routes'
 
-export default function App() {
+const App = () => {
   const noAccountId = '00000000-0000-0000-0000-000000000000'
 
   return (
     <CroctProvider appId={noAccountId}>
-      <Home />
+      <AppRoutes />
     </CroctProvider>
   )
 }
+
+export default App
