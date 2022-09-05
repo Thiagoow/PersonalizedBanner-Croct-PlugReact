@@ -14,8 +14,10 @@ export default function Home() {
         <h1 className={'text-firstColor font-bold text-3xl'}>
           {accentFirst && (
             <strong className="text-altFirstColor">{accentTitle}</strong>
-          )}{' '}
-          {title}{' '}
+          )}
+
+          {` ${title} `}
+
           {!accentFirst && (
             <strong className="text-altFirstColor">{accentTitle}</strong>
           )}
