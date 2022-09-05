@@ -240,6 +240,35 @@
     "@babel/helper-validator-identifier" "^7.18.6"
     to-fast-properties "^2.0.0"
 
+"@croct/json@^1.0", "@croct/json@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@croct/json/-/json-1.1.0.tgz#015a88931884d24d3313e66d783d30dcb3386045"
+  integrity sha512-7LUPr238qgXQBGvjTvnfUYOMZCKPU4KTZv9j41w7sgUYxSNaursbIlC/58Ag8LMIy8ZBJ9YEjw35kZyyV49+MA==
+
+"@croct/plug-react@^0.4.2":
+  version "0.4.2"
+  resolved "https://registry.yarnpkg.com/@croct/plug-react/-/plug-react-0.4.2.tgz#c9a7db164bcef3c08b28c9c0a1c0d28b6640bac3"
+  integrity sha512-KZsoPLJ5EzTBeJc77f7UE5uW2LOnXZW/syI3dYvJby0g+RhsT1rl9V4QaPA+jhctzCwlDFzOnpFZTWWSv2A/rw==
+  dependencies:
+    "@croct/plug" "^0.10.1"
+
+"@croct/plug@^0.10.1":
+  version "0.10.1"
+  resolved "https://registry.yarnpkg.com/@croct/plug/-/plug-0.10.1.tgz#7f918bf5434249382f6de429f07f853fee48c200"
+  integrity sha512-TYwLyzphKrDmtY8xqhzwjO/Bwj7vUFwM+akrfSJABEhPrgl1w8+0lYhlcITxfP+mANmpxe8NYaAsmKIE+G2+EQ==
+  dependencies:
+    "@croct/json" "^1.1.0"
+    "@croct/sdk" "^0.9.1"
+    tslib "^2.2.0"
+
+"@croct/sdk@^0.9.1":
+  version "0.9.1"
+  resolved "https://registry.yarnpkg.com/@croct/sdk/-/sdk-0.9.1.tgz#35e49bb412ac0ef45b9234d15ed186d4c8e9b3d2"
+  integrity sha512-/LLwi1uEDJ06xp/f04qFp4Iz9UX4fCfjMAjUPOSkJWlXLQLbuSXFG9H0yshVeEwMg5sIXQVlEeq3bkYjb/Hlhw==
+  dependencies:
+    "@croct/json" "^1.0"
+    tslib "^2.3.1"
+
 "@esbuild/linux-loong64@0.14.54":
   version "0.14.54"
   resolved "https://registry.yarnpkg.com/@esbuild/linux-loong64/-/linux-loong64-0.14.54.tgz#de2a4be678bd4d0d1ffbb86e6de779cde5999028"
@@ -1071,6 +1100,11 @@ to-regex-range@^5.0.1:
   integrity sha512-65P7iz6X5yEr1cwcgvQxbbIw7Uk3gOy5dIdtZ4rDveLqhrdJP+Li/Hx6tyK0NEb+2GCyneCMJiGqrADCSNk8sQ==
   dependencies:
     is-number "^7.0.0"
+
+tslib@^2.2.0, tslib@^2.3.1:
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.4.0.tgz#7cecaa7f073ce680a05847aa77be941098f36dc3"
+  integrity sha512-d6xOpEDfsi2CZVlPQzGeux8XMwLT9hssAsaPYExaQMuYskwb+x1x7J371tWlbBdWHroy99KnVB6qIkUbs5X3UQ==
 
 update-browserslist-db@^1.0.5:
   version "1.0.7"
