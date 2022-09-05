@@ -29,4 +29,7 @@
   .primaryBtn {
     @apply max-w-fit rounded-sm bg-firstColor text-btnTxtColor font-semibold hover:bg-altFirstColor;
   }
+  .centerHVFlex {
+    @apply h-screen flex flex-col items-center justify-center;
+  }
 }

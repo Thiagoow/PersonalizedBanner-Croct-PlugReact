@@ -17,11 +17,7 @@ export default function Home() {
     <React.Suspense fallback={<Loading />}>
       <Slot id="home-banner" fallback={fallbackBanner}>
         {({ title, subtitle, cta }) => (
-          <main
-            className={
-              'h-screen flex flex-col items-center justify-center bg-bodyColor text-txtColor'
-            }
-          >
+          <main className={'centerHVFlex bg-bodyColor text-txtColor'}>
             <section className={'grid gap-4 max-w-sm'}>
               <h1 className={'text-firstColor font-bold text-3xl'}>
                 <strong className="text-altFirstColor"></strong>
