@@ -1,21 +1,16 @@
 import React from 'react'
 
-const Button = () => {
-  const [count, setCount] = React.useState(0)
-
-  function handleClick() {
-    setCount((count) => count + 1)
-  }
-
+const Button = ({ label, href }) => {
   return (
-    <button
+    <a
+      href={href}
+      target="_blank"
       className={
-        'p-2 rounded-md bg-firstColor text-btnTxtColor font-semibold mt-6 mb-6 hover:bg-altFirstColor'
+        'max-w-fit p-4 rounded-sm bg-firstColor text-btnTxtColor font-size font-semibold hover:bg-altFirstColor'
       }
-      onClick={handleClick}
     >
-      count is: {count}
-    </button>
+      {label}
+    </a>
   )
 }
 
