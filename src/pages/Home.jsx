@@ -1,6 +1,6 @@
 import React from 'react'
 import { Slot } from '@croct/plug-react'
-import LoadingScreen from './LoadingScreen'
+import Loading from '../components/Loading'
 import Button from '../components/Button'
 
 export default function Home() {
@@ -14,7 +14,7 @@ export default function Home() {
   }
 
   return (
-    <React.Suspense fallback={<LoadingScreen />}>
+    <React.Suspense fallback={<Loading />}>
       <Slot id="home-banner" fallback={fallbackBanner}>
         {({ title, subtitle, cta }) => (
           <main
