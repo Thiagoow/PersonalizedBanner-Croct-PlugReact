@@ -24,3 +24,9 @@
     text-align: center;
   }
 }
+
+@layer components {
+  .primaryBtn {
+    @apply max-w-fit rounded-sm bg-firstColor text-btnTxtColor font-semibold hover:bg-altFirstColor;
+  }
+}
