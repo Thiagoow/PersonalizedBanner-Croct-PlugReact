@@ -1,7 +1,7 @@
 import React from 'react'
-import reactLogo from '../assets/img/react.svg'
+import { HomeBanner } from '../components/HomeBanner'
+const { accentTitle, accentFirst, title, subtitle, cta } = HomeBanner
 import Button from '../components/Button'
-import BtnLink from '../components/BtnLink'
 
 export default function Home() {
   return (
@@ -10,23 +10,24 @@ export default function Home() {
         'h-screen flex flex-col items-center justify-center bg-bodyColor text-txtColor'
       }
     >
-      <img
-        src={reactLogo}
-        className={'w-52 pointer-events-none animate-spin'}
-        alt="React logo spinning"
-      />
-      <b>Hello React + Tailwind!</b>
-      <Button />
+      <section className={'grid gap-4 max-w-sm'}>
+        <h1 className={'text-firstColor font-bold text-3xl'}>
+          {accentFirst && (
+            <strong className="text-altFirstColor">{accentTitle}</strong>
+          )}{' '}
+          {title}{' '}
+          {!accentFirst && (
+            <strong className="text-altFirstColor">{accentTitle}</strong>
+          )}
+        </h1>
 
-      <p>
-        Edit <code>App.jsx</code> save to test HMR updates.
-      </p>
+        <p>{subtitle}</p>
+        <Button label={cta.label} href={cta.link} />
+      </section>
 
-      <div className={'mt-6'}>
-        <BtnLink href="https://reactjs.org"> Learn React </BtnLink>
-        {' | '}
-        <BtnLink href="https://tailwindcss.com">Learn Tailwind</BtnLink>
-      </div>
+      <section className="infoImage">
+        <img src="" alt="" />
+      </section>
     </main>
   )
 }
