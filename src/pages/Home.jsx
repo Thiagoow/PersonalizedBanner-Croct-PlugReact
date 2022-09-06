@@ -1,13 +1,14 @@
 import React from 'react'
-import { Slot } from '@croct/plug-react'
+import { useEvaluation, Slot } from '@croct/plug-react'
 import Loading from '../components/Loading'
 import Button from '../components/Button'
 //Images import:
 import developer from '../assets/img/Developer.png'
 import marketer from '../assets/img/Marketer.png'
-import growthHacker from '../assets/img/GrowthHacker.png'
 
 export default function Home() {
+  const persona = useEvaluation("user's persona or else 'unknown'")
+
   const fallbackBanner = {
     title: 'Default title',
     subtitle: 'Default subtitle',
@@ -42,7 +43,7 @@ export default function Home() {
 
             <section className={'mt-16 self-end md:mt-0 md:ml-16'}>
               <img
-                src={developer}
+                src={persona === 'developer' ? developer : marketer}
                 className={'max-w-[17rem] xs:max-w-sm md:max-w-md xl:!max-w-lg'}
                 alt="persona image"
               />
