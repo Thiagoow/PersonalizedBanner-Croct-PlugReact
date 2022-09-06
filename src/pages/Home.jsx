@@ -10,11 +10,12 @@ export default function Home() {
   const persona = useEvaluation("user's persona or else 'unknown'")
 
   const fallbackBanner = {
-    title: 'Default title',
-    subtitle: 'Default subtitle',
+    title: "Hi There! It seems like you don't have a persona yet",
+    subtitle:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget aliquam tincidunt, nisl nisl aliquam nisl, eget aliquam nisl nisl sit amet nisl. Donec auctor, nisl eget aliquam tincidunt, nisl nisl aliquam nisl, eget aliquam nisl nisl sit amet nisl.',
     cta: {
-      label: 'Try now',
-      link: 'https://croct.com'
+      label: 'Set My Persona',
+      link: '/setPersona'
     }
   }
 
@@ -43,7 +44,7 @@ export default function Home() {
 
             <section className={'mt-16 self-end md:mt-0 md:ml-16'}>
               <img
-                src={persona === 'developer' ? developer : marketer}
+                src={persona === 'developer' || null ? developer : marketer}
                 className={'max-w-[17rem] xs:max-w-sm md:max-w-md xl:!max-w-lg'}
                 alt="persona image"
               />
