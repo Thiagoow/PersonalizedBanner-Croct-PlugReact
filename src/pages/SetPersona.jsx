@@ -35,7 +35,6 @@ export default function SetPersona() {
 
           <Link
             to="/home"
-            reloadDocument
             onClick={handleClick}
             className={'primaryBtn p-[0.6rem] ml-2'}
           >
