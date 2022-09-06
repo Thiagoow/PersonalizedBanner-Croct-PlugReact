@@ -7,8 +7,8 @@
 @layer base {
   :root {
     --body-color: #f9fffd;
-    --first-color: #4dd684;
-    --alt-first-color: #127758;
+    --first-color: #3fd29b;
+    --alt-first-color: #127755;
     --txt-color: #485261;
     --btn-txt-color: #fff;
   }
