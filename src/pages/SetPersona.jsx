@@ -37,7 +37,7 @@ export default function SetPersona() {
             to="/home"
             reloadDocument
             onClick={handleClick}
-            className={'primaryBtn p-2 ml-2'}
+            className={'primaryBtn p-[0.6rem] ml-2'}
           >
             SET !
           </Link>
