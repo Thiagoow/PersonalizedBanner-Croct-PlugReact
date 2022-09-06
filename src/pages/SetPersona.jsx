@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import { useCroct } from '@croct/plug-react'
 import croctLogo from '../assets/img/croct.svg'
 
@@ -12,7 +11,17 @@ export default function SetPersona() {
 
   function handleClick() {
     const inputValue = document.getElementById('personaId').value
-    setPersona(inputValue.toLowerCase())
+
+    if (
+      inputValue === 'developer' ||
+      inputValue === 'marketer' ||
+      inputValue === 'growth-hacker'
+    ) {
+      setPersona(inputValue.toLowerCase())
+      window.location.href = '/home'
+    } else {
+      alert('Please type a valid persona')
+    }
   }
 
   return (
@@ -25,7 +34,7 @@ export default function SetPersona() {
       <section className={'flex-col gap-3'}>
         <label>Choose your user persona:</label>
 
-        <div className={'flex-row'}>
+        <div className={'flex flex-row'}>
           <input
             type="text"
             id="personaId"
@@ -33,14 +42,9 @@ export default function SetPersona() {
             className="border-2 border-gray-300 bg-white h-10 focus:border-transparent"
           />
 
-          <Link
-            to="/home"
-            reloadDocument
-            onClick={handleClick}
-            className={'primaryBtn p-[0.6rem] ml-2'}
-          >
-            SET !
-          </Link>
+          <button onClick={handleClick} className={'primaryBtn p-2 ml-2'}>
+            SET!
+          </button>
         </div>
 
         <p className={'text-txtColor text-[0.84rem]'}>
