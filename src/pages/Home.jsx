@@ -45,7 +45,7 @@ export default function Home() {
             <section className={'mt-16 self-end md:mt-0 md:ml-16'}>
               <img
                 src={persona === 'developer' || null ? developer : marketer}
-                className={'max-w-[17rem] xs:max-w-sm md:max-w-md xl:!max-w-lg'}
+                className={'max-w-[17rem] xs:max-w-sm lg:!max-w-md'}
                 alt="persona image"
               />
             </section>
