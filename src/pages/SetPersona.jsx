@@ -10,7 +10,7 @@ export default function SetPersona() {
   )
 
   function handleClick() {
-    const inputValue = document.getElementById('personaId').value
+    const inputValue = document.getElementById('personaId').value.trim()
 
     if (
       inputValue === 'developer' ||
@@ -18,7 +18,7 @@ export default function SetPersona() {
       inputValue === 'growth-hacker'
     ) {
       setPersona(inputValue.toLowerCase())
-      window.location.href = '/home'
+      window.location.href = '/'
     } else {
       alert('Please type a valid persona')
     }
