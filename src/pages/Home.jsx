@@ -12,7 +12,7 @@ export default function Home() {
   const fallbackBanner = {
     title: "Hi There! It seems like you don't have a persona yet",
     subtitle:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget aliquam tincidunt, nisl nisl aliquam nisl, eget aliquam nisl nisl sit amet nisl. Donec auctor, nisl eget aliquam tincidunt, nisl nisl aliquam nisl, eget aliquam nisl nisl sit amet nisl.',
+      "If that's the case, please click on the CTA-Button below & choose one of the options to get started.",
     cta: {
       label: 'Set My Persona',
       link: '/setPersona'
