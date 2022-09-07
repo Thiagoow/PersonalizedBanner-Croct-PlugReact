@@ -25,11 +25,13 @@ export default function Home() {
         {({ title, subtitle, cta }) => (
           <main
             className={
-              'centerHVFlex bg-bodyColor text-txtColor mt-48 md:flex-row md:mt-0'
+              'centerHVFlex bg-bodyColor text-txtColor mt-32 md:mt-0 md:flex-row'
             }
           >
             <section
-              className={'grid gap-4 max-w-sm ml-5 md:max-w-md md:ml-10'}
+              className={
+                'grid gap-4 max-w-sm self-start ml-5 xs:ml-14 md:self-center md:ml-10 md:max-w-md'
+              }
             >
               <h1 className={'text-firstColor font-bold text-3xl'}>
                 <strong className="text-altFirstColor">
@@ -43,6 +45,16 @@ export default function Home() {
             </section>
 
             <section className={'mt-16 self-end md:mt-0 md:ml-16'}>
+              <svg // Mobile triangleBg:
+                class="absolute z-0 right-0 block md:hidden w-0 xs:h-full xs:w-[52%] text-[#3fd29a]"
+                fill="currentColor"
+                viewBox="0 0 100 100"
+                preserveAspectRatio="none"
+                aria-hidden="true"
+              >
+                <polygon points="50,0 100,0 100,100 0,100" />
+              </svg>
+
               <img
                 src={persona === 'developer' || null ? developer : marketer}
                 className={
@@ -53,16 +65,6 @@ export default function Home() {
 
               <svg // Desktop triangleBg:
                 class="absolute z-0 right-0 inset-y-0 hidden md:block h-full md:w-[39%] xl:w-[42%] text-[#3fd29a]"
-                fill="currentColor"
-                viewBox="0 0 100 100"
-                preserveAspectRatio="none"
-                aria-hidden="true"
-              >
-                <polygon points="50,0 100,0 100,100 0,100" />
-              </svg>
-
-              <svg // Mobile triangleBg:
-                class="absolute z-0 right-0 block md:hidden xs:h-full w-0 xs:w-[52%] xs:bottom-[-49.6%] text-[#3fd29a]"
                 fill="currentColor"
                 viewBox="0 0 100 100"
                 preserveAspectRatio="none"
