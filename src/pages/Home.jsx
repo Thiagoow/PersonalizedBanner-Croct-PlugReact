@@ -60,6 +60,16 @@ export default function Home() {
               >
                 <polygon points="50,0 100,0 100,100 0,100" />
               </svg>
+
+              <svg // Mobile triangleBg:
+                class="absolute z-0 right-0 block md:hidden bottom-0 w-0 xs:w-[52%] xs:bottom-[-38%] xs:h-full text-[#3fd29a]"
+                fill="currentColor"
+                viewBox="0 0 100 100"
+                preserveAspectRatio="none"
+                aria-hidden="true"
+              >
+                <polygon points="50,0 100,0 100,100 0,100" />
+              </svg>
             </section>
           </main>
         )}
