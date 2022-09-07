@@ -1,7 +1,7 @@
-<!--
+<!-- -->
 <div align="center">
 <img src="./docs/app.jpg" align="center">
-</div> -->
+</div>
 
 # Personalized Banner - Tailwind CSS & ReactPlug 🐊
 
