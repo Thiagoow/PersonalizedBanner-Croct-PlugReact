@@ -2,7 +2,7 @@ import React from 'react'
 import { useCroct } from '@croct/plug-react'
 import croctLogo from '../assets/img/croct.svg'
 
-export default function SetPersona() {
+export default function Login() {
   const croct = useCroct()
   const setPersona = React.useCallback(
     (inputValue) => croct.user.edit().set('custom.persona', inputValue).save(),
@@ -10,15 +10,18 @@ export default function SetPersona() {
   )
 
   function handleClick() {
-    const inputValue = document.getElementById('personaId').value.trim()
+    const inputValue = document
+      .getElementById('personaId')
+      .value.trim()
+      .toLowerCase()
 
     if (
       inputValue === 'developer' ||
       inputValue === 'marketer' ||
       inputValue === 'growth-hacker'
     ) {
-      setPersona(inputValue.toLowerCase())
-      window.location.href = '/'
+      setPersona(inputValue)
+      window.location.href = '/home'
     } else {
       alert('Please type a valid persona')
     }
