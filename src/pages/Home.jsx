@@ -45,9 +45,21 @@ export default function Home() {
             <section className={'mt-16 self-end md:mt-0 md:ml-16'}>
               <img
                 src={persona === 'developer' || null ? developer : marketer}
-                className={'max-w-[17rem] xs:max-w-sm lg:!max-w-md'}
+                className={
+                  'max-w-[17rem] xs:max-w-sm lg:!max-w-md relative z-10'
+                }
                 alt="persona image"
               />
+
+              <svg // Desktop triangleBg:
+                class="absolute z-0 inset-y-0 right-0 hidden md:block h-full md:w-[39%] xl:w-[42%] transform text-[#3fd29a]"
+                fill="currentColor"
+                viewBox="0 0 100 100"
+                preserveAspectRatio="none"
+                aria-hidden="true"
+              >
+                <polygon points="50,0 100,0 100,100 0,100" />
+              </svg>
             </section>
           </main>
         )}
