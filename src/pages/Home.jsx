@@ -52,7 +52,7 @@ export default function Home() {
               />
 
               <svg // Desktop triangleBg:
-                class="absolute z-0 inset-y-0 right-0 hidden md:block h-full md:w-[39%] xl:w-[42%] transform text-[#3fd29a]"
+                class="absolute z-0 right-0 inset-y-0 hidden md:block h-full md:w-[39%] xl:w-[42%] text-[#3fd29a]"
                 fill="currentColor"
                 viewBox="0 0 100 100"
                 preserveAspectRatio="none"
@@ -62,7 +62,7 @@ export default function Home() {
               </svg>
 
               <svg // Mobile triangleBg:
-                class="absolute z-0 right-0 block md:hidden bottom-0 w-0 xs:w-[52%] xs:bottom-[-38%] xs:h-full text-[#3fd29a]"
+                class="absolute z-0 right-0 block md:hidden xs:h-full w-0 xs:w-[52%] xs:bottom-[-49.6%] text-[#3fd29a]"
                 fill="currentColor"
                 viewBox="0 0 100 100"
                 preserveAspectRatio="none"
