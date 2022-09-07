@@ -11,7 +11,7 @@ export default function Home() {
       "If that's the case, please click on the CTA-Button below & choose one of the options to get started.",
     cta: {
       label: 'Set My Persona',
-      link: '/setPersona'
+      link: '/login'
     }
   }
 
