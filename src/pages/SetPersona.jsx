@@ -25,7 +25,7 @@ export default function SetPersona() {
   }
 
   return (
-    <main className={'centerHVFlex gap-14 [&>*]:flex'}>
+    <main className={'centerHVFlex !h-screen gap-14 [&>*]:flex'}>
       <div className="gap-2 text-xl items-end font-semibold">
         <img src={croctLogo} className={'max-w-[2rem]'} alt="Croct logo" />
         <p>Croct</p>
